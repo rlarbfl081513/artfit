@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
+import assetPath from "../utils/assetPath";
 
 const Container = styled.div`
   display: flex;
@@ -114,7 +115,7 @@ function MainPage(props) {
       <ButtonWrapper>
         {/* Line Button */}
         <CustomButton
-          gif="line.gif"
+          gif={assetPath('line.gif')}
           bgColor="#FF6347"
           onMouseEnter={() => setIsHoveringLine(true)}
           onMouseLeave={() => setIsHoveringLine(false)}
@@ -129,7 +130,7 @@ function MainPage(props) {
 
         {/* Dot Button */}
         <CustomButton
-          gif="dot.gif"
+          gif={assetPath('dot.gif')}
           bgColor="#FF6307"
           onMouseEnter={() => setIsHoveringDot(true)}
           onMouseLeave={() => setIsHoveringDot(false)}
@@ -144,7 +145,7 @@ function MainPage(props) {
 
         {/* Blob Button (GIF 이미지 포함) */}
         <CustomButton
-          gif="blob.gif" /* GIF 이미지 경로 */
+          gif={assetPath('blob.gif')} /* GIF 이미지 경로 */
           onMouseEnter={() => setIsHoveringBlob(true)}
           onMouseLeave={() => setIsHoveringBlob(false)}
           onClick={() => { navigate('/CustomBlob'); }}
@@ -157,8 +158,8 @@ function MainPage(props) {
         </CustomButton>
       </ButtonWrapper>
       <ExImg>
-        <img src="ex_2.png"></img>
-        <img src="ex.png"></img>
+        <img src={assetPath('ex_2.png')} />
+        <img src={assetPath('ex.png')} />
       </ExImg>
     </Container>
   );

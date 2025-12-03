@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled from "styled-components";
+import assetPath from '../utils/assetPath';
 
 // Styled components
 const Container = styled.div`
@@ -160,12 +161,12 @@ const Button = styled.div`
 const UserCustomData = ({ ET, setET, selectedIndices, setSelectedIndices }) => {
   
   const buttonImages = [
-    '/waterLine/w500ml.png',
-    '/waterLine/w100ml.png',
-    '/waterLine/w200ml.png',
-    '/waterLine/w300ml.png',
-    '/waterLine/w100ml.png',
-    '/waterLine/w500ml.png',
+    assetPath('waterLine/w500ml.png'),
+    assetPath('waterLine/w100ml.png'),
+    assetPath('waterLine/w200ml.png'),
+    assetPath('waterLine/w300ml.png'),
+    assetPath('waterLine/w100ml.png'),
+    assetPath('waterLine/w500ml.png'),
   ];
   
   useEffect(() => {

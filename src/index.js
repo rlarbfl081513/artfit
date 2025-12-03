@@ -9,16 +9,17 @@ import MainPage from './page/MainPage';
 import CustomLine from './page/CustomLine';
 import CustomDot from './page/CustomDot';
 import CustomBlob from './page/CustomBlob';
+import assetPath from './utils/assetPath';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
        <div>
         <div className='BOX'>
           <div className='Text'>GENERATIVE ART</div>
           <div className='Text'>
             <Link to="/" className='logo'>
-            <img className='logoImg' src='logo.png'></img>
+            <img className='logoImg' src={assetPath('logo.png')} />
             </Link>
           </div>
           <div className='Text'>HEALTH CARE</div>

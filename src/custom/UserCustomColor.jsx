@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from "styled-components";
+import assetPath from "../utils/assetPath";
 
 const Container = styled.div`
     font-size: 20px;
@@ -182,18 +183,18 @@ const UserCustomColor = ({ BC, setBC, BP, setBP, BF, setBF, LC, setLC, LP, setLP
             <Title>Breakfast</Title>
             <ButtonGroup>
                 <Button onClick={() => BFoodSelect(1)} isSelected={selectedB === 1}>
-                    <ButtonImage className="ButtonImage" src="./lineFood/b_1.png" alt="Color Theme 1" />
+                    <ButtonImage className="ButtonImage" src={assetPath('lineFood/b_1.png')} alt="Color Theme 1" />
                     <ButtonText>
                     Triangle Gimbap</ButtonText>
                 </Button>
 
                 <Button onClick={() => BFoodSelect(2)} isSelected={selectedB === 2}>
-                    <ButtonImage className="ButtonImage" src="./lineFood/b_2.png" alt="Color Theme 2" />
+                    <ButtonImage className="ButtonImage" src={assetPath('lineFood/b_2.png')} alt="Color Theme 2" />
                     <ButtonText>Chicken</ButtonText>
                 </Button>
 
                 <Button onClick={() => BFoodSelect(3)} isSelected={selectedB === 3}>
-                    <ButtonImage className="ButtonImage" src="./lineFood/b_3.png" alt="Color Theme 3" />
+                    <ButtonImage className="ButtonImage" src={assetPath('lineFood/b_3.png')} alt="Color Theme 3" />
                     <ButtonText>Doughnut</ButtonText>
                 </Button>
             </ButtonGroup>
@@ -203,17 +204,17 @@ const UserCustomColor = ({ BC, setBC, BP, setBP, BF, setBF, LC, setLC, LP, setLP
             <Title>Lunch</Title>
             <ButtonGroup>
                 <Button onClick={() => LFoodSelect(1)} isSelected={selectedL === 1}>
-                    <ButtonImage className="ButtonImage" src="./lineFood/l_1.png" alt="Color Theme 1" />
+                    <ButtonImage className="ButtonImage" src={assetPath('lineFood/l_1.png')} alt="Color Theme 1" />
                     <ButtonText>Noodle </ButtonText>
                 </Button>
 
                 <Button onClick={() => LFoodSelect(2)} isSelected={selectedL === 2}>
-                    <ButtonImage className="ButtonImage" src="./lineFood/l_2.png" alt="Color Theme 2" />
+                    <ButtonImage className="ButtonImage" src={assetPath('lineFood/l_2.png')} alt="Color Theme 2" />
                     <ButtonText>Hamburger </ButtonText>
                 </Button>
 
                 <Button onClick={() => LFoodSelect(3)} isSelected={selectedL === 3}>
-                    <ButtonImage className="ButtonImage" src="./lineFood/l_3.png" alt="Color Theme 3" />
+                    <ButtonImage className="ButtonImage" src={assetPath('lineFood/l_3.png')} alt="Color Theme 3" />
                     <ButtonText>Ice Cream</ButtonText>
                 </Button>
             </ButtonGroup>
@@ -223,18 +224,18 @@ const UserCustomColor = ({ BC, setBC, BP, setBP, BF, setBF, LC, setLC, LP, setLP
             <Title>Dinner</Title>
             <ButtonGroup>
                 <Button onClick={() => DFoodSelect(1)} isSelected={selectedD === 1}>
-                    <ButtonImage className="ButtonImage" src="./lineFood/d_1.png" alt="Color Theme 1" />
+                    <ButtonImage className="ButtonImage" src={assetPath('lineFood/d_1.png')} alt="Color Theme 1" />
                     <ButtonText>Pizza</ButtonText>
                 </Button>
 
                 <Button onClick={() => DFoodSelect(2)} isSelected={selectedD === 2}>
-                    <ButtonImage className="ButtonImage" src="./lineFood/d_2.png" alt="Color Theme 2" />
+                    <ButtonImage className="ButtonImage" src={assetPath('lineFood/d_2.png')} alt="Color Theme 2" />
                     <ButtonText>
                     Grilled skewers</ButtonText>
                 </Button>
 
                 <Button onClick={() => DFoodSelect(3)} isSelected={selectedD === 3}>
-                    <ButtonImage className="ButtonImage" src="./lineFood/d_3.png" alt="Color Theme 3" />
+                    <ButtonImage className="ButtonImage" src={assetPath('lineFood/d_3.png')} alt="Color Theme 3" />
                     <ButtonText>
                     Pudding</ButtonText>
                 </Button>

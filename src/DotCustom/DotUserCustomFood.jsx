@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from "styled-components";
+import assetPath from '../utils/assetPath';
 
 const Container = styled.div`
   display: flex;
@@ -136,15 +137,15 @@ const DotUserCustomFood = ({ setCabRatio, setProRatio, setFatRatio }) => {
           <BoxWrapper isClicked={clickedIndex === 1} isHovered={hoveredIndex === 0}>
             <Circle className="Circle" />
             <Box className="Box">
-              <img src="./blobFood/cab_1.png" alt="Carbohydrate" />
+              <img src={assetPath('blobFood/cab_1.png')} alt="Carbohydrate" />
               <Gram className="Gram">40g</Gram>
               </Box>
             <Box className="Box">
-              <img src="./blobFood/pro_1.png" alt="Protein" />
+              <img src={assetPath('blobFood/pro_1.png')} alt="Protein" />
               <Gram className="Gram">20g</Gram>
               </Box>
             <Box className="Box">
-              <img src="./blobFood/fat_1.png" alt="Fat" />
+              <img src={assetPath('blobFood/fat_1.png')} alt="Fat" />
             <Gram className="Gram">15g</Gram>
               </Box>
           </BoxWrapper>
@@ -154,15 +155,15 @@ const DotUserCustomFood = ({ setCabRatio, setProRatio, setFatRatio }) => {
           <BoxWrapper isClicked={clickedIndex === 2} isHovered={hoveredIndex === 1}>
             <Circle className="Circle" />
             <Box className="Box">
-              <img src="./blobFood/cab_2.png" alt="Carbohydrate" />
+              <img src={assetPath('blobFood/cab_2.png')} alt="Carbohydrate" />
               <Gram className="Gram">38g</Gram>
               </Box>
             <Box className="Box">
-              <img src="./blobFood/pro_2.png" alt="Protein" />
+              <img src={assetPath('blobFood/pro_2.png')} alt="Protein" />
               <Gram className="Gram">12g</Gram>
               </Box>
             <Box className="Box">
-              <img src="./blobFood/fat_2.png" alt="Fat" />
+              <img src={assetPath('blobFood/fat_2.png')} alt="Fat" />
             <Gram className="Gram">6g</Gram>
               </Box>
           </BoxWrapper>
@@ -172,15 +173,15 @@ const DotUserCustomFood = ({ setCabRatio, setProRatio, setFatRatio }) => {
           <BoxWrapper isClicked={clickedIndex === 3} isHovered={hoveredIndex === 2}>
             <Circle className="Circle" />
             <Box className="Box">
-              <img src="./blobFood/cab_3.png" alt="Carbohydrate" />
+              <img src={assetPath('blobFood/cab_3.png')} alt="Carbohydrate" />
               <Gram className="Gram">45g</Gram>
               </Box>
             <Box className="Box">
-              <img src="./blobFood/pro_3.png" alt="Protein" />
+              <img src={assetPath('blobFood/pro_3.png')} alt="Protein" />
               <Gram className="Gram">25g</Gram>
               </Box>
             <Box className="Box">
-              <img src="./blobFood/fat_3.png" alt="Fat" />
+              <img src={assetPath('blobFood/fat_3.png')} alt="Fat" />
             <Gram className="Gram">50g</Gram>
               </Box>
           </BoxWrapper>

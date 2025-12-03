@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import assetPath from '../utils/assetPath';
 
 const Container = styled.div`
   display: flex;
@@ -163,7 +164,7 @@ const UserCustomThemu = ({ setwatercolor, setfatRatiocolor, setproteinRatiocolor
         >
           <Info>Blue </Info>
           <div className="ColorImg">
-            <img src="./Color/line_blue.png" alt="" />
+            <img src={assetPath('Color/line_blue.png')} alt="" />
           </div>
           <div className="Circle" />
         </Button>
@@ -177,7 +178,7 @@ const UserCustomThemu = ({ setwatercolor, setfatRatiocolor, setproteinRatiocolor
         >
           <Info>Pink </Info>
           <div className="ColorImg">
-            <img src="./Color/line_red.png" alt="" />
+            <img src={assetPath('Color/line_red.png')} alt="" />
           </div>
           <div className="Circle" />
         </Button>
@@ -191,7 +192,7 @@ const UserCustomThemu = ({ setwatercolor, setfatRatiocolor, setproteinRatiocolor
         >
           <Info>Purple </Info>
           <div className="ColorImg">
-            <img src="./Color/line_pur.png" alt="" />
+            <img src={assetPath('Color/line_pur.png')} alt="" />
           </div>
           <div className="Circle" />
         </Button>
@@ -204,7 +205,7 @@ const UserCustomThemu = ({ setwatercolor, setfatRatiocolor, setproteinRatiocolor
         >
           <Info>Orange </Info>
           <div className="ColorImg">
-            <img src="./Color/line_oran.png" alt="" />
+            <img src={assetPath('Color/line_oran.png')} alt="" />
           </div>
           <div className="Circle" />
         </Button>
@@ -217,7 +218,7 @@ const UserCustomThemu = ({ setwatercolor, setfatRatiocolor, setproteinRatiocolor
         >
           <Info>Green </Info>
           <div className="ColorImg">
-            <img src="./Color/line_green.png" alt="" />
+            <img src={assetPath('Color/line_green.png')} alt="" />
           </div>
           <div className="Circle" />
         </Button>

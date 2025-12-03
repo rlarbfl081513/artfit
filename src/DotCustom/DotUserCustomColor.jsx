@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import assetPath from '../utils/assetPath';
 
 const Container = styled.div`
   display: flex;
@@ -125,7 +126,7 @@ const DotUserCustomFood = ({ setwaterColor, setDefaultColor1, setDefaultColor2 }
         >
           <Info>Blue </Info>
           <div className="ColorImg">
-            <img src="./Color/dot_blue.png" alt="" />
+            <img src={assetPath('Color/dot_blue.png')} alt="" />
           </div>
           <div className="Circle" />
         </Button>
@@ -139,7 +140,7 @@ const DotUserCustomFood = ({ setwaterColor, setDefaultColor1, setDefaultColor2 }
         >
           <Info>Pink </Info>
           <div className="ColorImg">
-            <img src="./Color/dot_red.png" alt="" />
+            <img src={assetPath('Color/dot_red.png')} alt="" />
           </div>
           <div className="Circle" />
         </Button>
@@ -153,7 +154,7 @@ const DotUserCustomFood = ({ setwaterColor, setDefaultColor1, setDefaultColor2 }
         >
           <Info>Green </Info>
           <div className="ColorImg">
-            <img src="./Color/dot_green.png" alt="" />
+            <img src={assetPath('Color/dot_green.png')} alt="" />
           </div>
           <div className="Circle" />
         </Button>
@@ -166,7 +167,7 @@ const DotUserCustomFood = ({ setwaterColor, setDefaultColor1, setDefaultColor2 }
         >
           <Info>Purple </Info>
           <div className="ColorImg">
-            <img src="./Color/dot_purple.png" alt="" />
+            <img src={assetPath('Color/dot_purple.png')} alt="" />
           </div>
           <div className="Circle" />
         </Button>
@@ -179,7 +180,7 @@ const DotUserCustomFood = ({ setwaterColor, setDefaultColor1, setDefaultColor2 }
         >
           <Info>Yellow </Info>
           <div className="ColorImg">
-            <img src="./Color/dot_yellow.png" alt="" />
+            <img src={assetPath('Color/dot_yellow.png')} alt="" />
           </div>
           <div className="Circle" />
         </Button>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect  } from 'react';
 import styled from "styled-components";
+import assetPath from '../utils/assetPath';
 
 const Container = styled.div`
   font-size: 20px;
@@ -163,15 +164,15 @@ const ButtonGroupff = styled.div`
 
 const DotUserCustomWaterEx = ({ ET, setET, WTOne, setWTOne, WTTwo, setWTTwo }) => {
   const buttonData1 = [
-    { imageSrc:"/water/w200.png", time:'08:00', amount: 100, x: 100, y: 100 },
-    { imageSrc:'/water/w400.png',time:'11:20', amount: 200, x: 200, y: 250 },
-    { imageSrc:'/water/w600.png',time:'14:40', amount: 300, x: 300, y: 350 }
+    { imageSrc: assetPath('water/w200.png'), time:'08:00', amount: 100, x: 100, y: 100 },
+    { imageSrc: assetPath('water/w400.png'),time:'11:20', amount: 200, x: 200, y: 250 },
+    { imageSrc: assetPath('water/w600.png'),time:'14:40', amount: 300, x: 300, y: 350 }
   ];
 
   const buttonData2 = [
-    { imageSrc:"/water/w200.png", time:'17:00', amount: 100, x: 100, y: 550 },
-    { imageSrc:'/water/w400.png',time:'20:20', amount: 200, x: 200, y: 650 },
-    { imageSrc:'/water/w600.png',time:'23:40', amount: 300, x: 300, y: 900 }
+    { imageSrc: assetPath('water/w200.png'), time:'17:00', amount: 100, x: 100, y: 550 },
+    { imageSrc: assetPath('water/w400.png'),time:'20:20', amount: 200, x: 200, y: 650 },
+    { imageSrc: assetPath('water/w600.png'),time:'23:40', amount: 300, x: 300, y: 900 }
   ];
 
   // 초기값을 useState로 설정

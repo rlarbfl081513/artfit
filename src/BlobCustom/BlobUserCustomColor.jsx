@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import assetPath from '../utils/assetPath';
 
 const Container = styled.div`
   display: flex;
@@ -138,7 +139,7 @@ const BlobUserCustomFood = ({ setIScolor1,setBDcolor1, setDefaultColor1, setDefa
         >
           <Info>Ocean Blue</Info>
           <div className="ColorImg">
-            <img src="./Color/bolb_blue.png" alt="" />
+            <img src={assetPath('Color/bolb_blue.png')} alt="" />
           </div>
           <div className="Circle" />
         </Button>
@@ -152,7 +153,7 @@ const BlobUserCustomFood = ({ setIScolor1,setBDcolor1, setDefaultColor1, setDefa
         >
           <Info>Forest Green</Info>
           <div className="ColorImg">
-            <img src="./Color/bolb_green.png" alt="" />
+            <img src={assetPath('Color/bolb_green.png')} alt="" />
           </div>
           <div className="Circle" />
         </Button>
@@ -166,7 +167,7 @@ const BlobUserCustomFood = ({ setIScolor1,setBDcolor1, setDefaultColor1, setDefa
         >
           <Info>Bright Red</Info>
           <div className="ColorImg">
-            <img src="./Color/bolb_red.png" alt="" />
+            <img src={assetPath('Color/bolb_red.png')} alt="" />
           </div>
           <div className="Circle" />
         </Button>
@@ -179,7 +180,7 @@ const BlobUserCustomFood = ({ setIScolor1,setBDcolor1, setDefaultColor1, setDefa
         >
           <Info>Purple</Info>
           <div className="ColorImg">
-            <img src="./Color/blob_pur.png" alt="" />
+            <img src={assetPath('Color/blob_pur.png')} alt="" />
           </div>
           <div className="Circle" />
         </Button>
@@ -192,7 +193,7 @@ const BlobUserCustomFood = ({ setIScolor1,setBDcolor1, setDefaultColor1, setDefa
         >
           <Info>Yellow</Info>
           <div className="ColorImg">
-            <img src="./Color/blob_yel.png" alt="" />
+            <img src={assetPath('Color/blob_yel.png')} alt="" />
           </div>
           <div className="Circle" />
         </Button>
